@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript eliminar imagenes</title>
+</head>
+<body>
+		<div id="id_1">
+				<img src="https://picsum.photos/200/300" onclick="pulsar()">
+				<img src="https://picsum.photos/200" onclick="pulsar()">
+				<img src="https://picsum.photos/200/300" onclick="pulsar()">
+				<img src="https://picsum.photos/200" onclick="pulsar()">
+				<img src="https://picsum.photos/200/300" onclick="pulsar()">
+				<img src="https://picsum.photos/200" onclick="pulsar()">
+				<img src="https://picsum.photos/200/300" onclick="pulsar()">
+				<img src="https://picsum.photos/200" onclick="pulsar()">
+
+		</div>
+<script type="text/javascript">
+  function pulsar(){
+   var getChild = document.getElementById("id_1");
+   getChild.removeChild(getChild.childNodes[1]);
+}
+</script>
+</html>
